@@ -1,0 +1,16 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? Disconnects from the VPN
+##?
+##? Usage:
+##?    connect
+docs::parse "$@"
+
+echo "Disonnecting from the VPN"
+
+PID=$(ps -eaf | grep "vpn" | grep "sudo" | awk 'BEGIN {OFS="\t"}; {print $2}')
+kill $PID

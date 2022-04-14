@@ -1,0 +1,15 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? Connects to the VPN of HolaLuz
+##?
+##? Usage:
+##?    connect
+docs::parse "$@"
+
+echo "Connecting to HolaLuz VPN"
+
+expect $DOTFILES_PATH/scripts/vpn/connect-vpn.exp $HOME/client.ovpn

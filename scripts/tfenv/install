@@ -10,14 +10,17 @@ source "$DOTLY_PATH/scripts/core/_main.sh"
 ##?    install
 docs::parse "$@"
 
-rm -rf ~/code/.tfenv
-git clone git@github.com:tfutils/tfenv.git ~/code/.tfenv
+TFENV_HOME=$HOME/code/.tfenv
+BIN_LOCAL=$HOME/.local/bin
 
-files="$HOME/code/.tfenv/bin/*"
+rm -rf $TFENV_HOME
+git clone git@github.com:tfutils/tfenv.git $TFENV_HOME
+
+files="$TFENV_HOME/bin/*"
 for file in $files
 do
   filename=$(basename -- "$file")
   echo "Processing $filename file..."
-  rm -rf ~/.local/bin/$filename
-  ln -s ~/code/.tfenv/$filename ~/.local/bin/$filename
+  rm -rf $BIN_LOCAL/$filename
+  ln -s $TFENV_HOME/$filename $BIN_LOCAL/$filename
 done

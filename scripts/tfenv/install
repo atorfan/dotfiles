@@ -1,0 +1,23 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? Installs the tfenv (a terraform versions manager tool)
+##?
+##? Usage:
+##?    install
+docs::parse "$@"
+
+rm -rf ~/code/.tfenv
+git clone git@github.com:tfutils/tfenv.git ~/code/.tfenv
+
+files="$HOME/code/.tfenv/bin/*"
+for file in $files
+do
+  filename=$(basename -- "$file")
+  echo "Processing $filename file..."
+  rm -rf ~/.local/bin/$filename
+  ln -s ~/code/.tfenv/$filename ~/.local/bin/$filename
+done

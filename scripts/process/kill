@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? Kills a process from the list
+##?
+##? Usage:
+##?    kill
+##?    kill <search_criteria>
+docs::parse "$@"
+
+#PID=$$
+#echo $PID
+#ps -eaf | grep "$search_criteria" | awk -F '\t' '{ if ($2 != $PID || $3 != $PID) { print} }'
+
+process_id=$(ps -eaf | grep "$search_criteria" | fzf | awk '{ print $2}')
+kill $process_id

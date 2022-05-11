@@ -1,0 +1,28 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? Kills a process from the list
+##?
+##? Usage:
+##?    laptop
+##?    laptop <position>
+docs::parse "$@"
+
+if args::has_no_args "$@"; then
+  position=$(printf "bottom\nleft" | fzf)
+else
+  $position="$1"
+fi
+
+if [[ $position == "left" ]]; then
+  gsettings set org.gnome.shell.extensions.dash-to-dock multi-monitor true
+  xrandr --output DP-1 --right-of eDP-1
+elif [[ $position == "bottom" ]]; then
+  gsettings set org.gnome.shell.extensions.dash-to-dock multi-monitor false
+  gsettings set org.gnome.shell.extensions.dash-to-dock preferred-monitor 1
+  xrandr --output DP-1 --above eDP-1
+fi
+

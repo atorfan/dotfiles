@@ -7,10 +7,10 @@ source "$DOTLY_PATH/scripts/core/_main.sh"
 ##? Disconnects from the VPN
 ##?
 ##? Usage:
-##?    connect
+##?    off
 docs::parse "$@"
 
-echo "Disonnecting from the VPN"
+echo "Disconnecting from the VPN"
 
 PID=$(ps -eaf | grep "vpn" | grep "sudo" | awk 'BEGIN {OFS="\t"}; {print $2}')
 kill $PID

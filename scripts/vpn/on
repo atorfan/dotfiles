@@ -7,7 +7,7 @@ source "$DOTLY_PATH/scripts/core/_main.sh"
 ##? Connects to the VPN of HolaLuz
 ##?
 ##? Usage:
-##?    connect
+##?    on
 docs::parse "$@"
 
 echo "Connecting to HolaLuz VPN"

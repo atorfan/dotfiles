@@ -1,0 +1,18 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? Disable sending the sound from microphone to the output
+##?
+##? Usage:
+##?    off
+docs::parse "$@"
+
+modules=$(pactl list short modules | awk '$2 =="module-loopback" { print $1 }' - )
+#pactl unload-module $(pactl list short modules | awk '$2 =="module-loopback" { print $1 }' - )
+for module in $modules
+do
+  pactl unload-module $module
+done

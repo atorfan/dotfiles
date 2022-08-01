@@ -1,0 +1,13 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? Sets as default a terraform version using tfenv
+##?
+##? Usage:
+##?    use <version>
+docs::parse "$@"
+
+tfenv use $version

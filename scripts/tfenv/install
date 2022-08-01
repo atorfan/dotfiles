@@ -10,8 +10,8 @@ source "$DOTLY_PATH/scripts/core/_main.sh"
 ##?    install
 docs::parse "$@"
 
-TFENV_HOME=$HOME/code/.tfenv
-BIN_LOCAL=$HOME/.local/bin
+TFENV_HOME=$HOME/code/tfenv
+LOCAL_BIN=$HOME/.local/bin
 
 rm -rf $TFENV_HOME
 git clone git@github.com:tfutils/tfenv.git $TFENV_HOME
@@ -21,6 +21,6 @@ for file in $files
 do
   filename=$(basename -- "$file")
   echo "Processing $filename file..."
-  rm -rf $BIN_LOCAL/$filename
-  ln -s $TFENV_HOME/$filename $BIN_LOCAL/$filename
+  rm -rf $LOCAL_BIN/$filename
+  ln -s $TFENV_HOME/bin/$filename $LOCAL_BIN/$filename
 done

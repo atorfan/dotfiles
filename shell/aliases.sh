@@ -28,3 +28,8 @@ alias i.='(idea $PWD &>/dev/null &)'
 alias c.='(code $PWD &>/dev/null &)'
 alias o.='open .'
 alias up='dot package update_all'
+
+alias code='cd ~ && cd code'
+alias HL='cd ~ && cd code/holaluz'
+alias core='cd ~ && cd code/holaluz/core'
+alias solarsales='cd ~ && cd code/holaluz/solar-sales'

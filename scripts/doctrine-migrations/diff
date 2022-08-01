@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+shopt -s expand_aliases
+source "$DOTFILES_PATH/shell/aliases.sh"
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? Doctrine migrations migrate helper script
+##?
+##? Usage:
+##?    diff <project>
+docs::parse "$@"
+
+if args::has_no_args "$@"; then
+  exit 1
+fi
+
+if [[ $project == "core" ]]; then
+  core #change to core directory
+  docker exec -u www-data --tty core-fpm php bin/console doctrine:migrations:diff --no-interaction -v
+fi

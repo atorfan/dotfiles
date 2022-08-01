@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+shopt -s expand_aliases
+source "$DOTFILES_PATH/shell/aliases.sh"
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? Doctrine migrations migrate helper script
+##?
+##? Usage:
+##?    apply <project>
+docs::parse "$@"
+
+if args::has_no_args "$@"; then
+  exit 1
+fi
+
+if [[ $project == "core" ]]; then
+  core #change to core directory
+  make db-update && make db-update ENV=test
+fi

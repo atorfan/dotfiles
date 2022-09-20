@@ -48,7 +48,7 @@
 	textconv = docx2txt
 
 [credential]
-	helper = osxkeychain
+# 	helper = osxkeychain
 
 [pager]
 	diff = pretty-diff | less --tabs=4 -RFX

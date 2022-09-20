@@ -1,0 +1,19 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? Deletes all the branches without recent commits (at least in last two months)
+##?
+##? Usage:
+##?   delete-old-branches <months_ago>
+docs::parse "$@"
+
+dot git checkout-all-branches
+
+branches=$(dot git print-old-branches $months_ago | awk -F ";" '{print $1}')
+
+for branch in $branches; do
+  dot git delete-branch "${branch}"
+done

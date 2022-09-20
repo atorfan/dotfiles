@@ -1,0 +1,26 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? Prints all the branches without recent commits (at least in last two months)
+##?
+##? Usage:
+##?   print-old-branches <months_ago>
+docs::parse "$@"
+
+git_info_separator=' ## '
+old_branches_date=$(date -d"$months_ago months ago" +%Y-%m-%d)
+
+# last commit fields
+branch_name='%(color:yellow)%(refname:short)%(color:reset)'
+object_name='%(color:red)%(objectname:short)%(color:reset)'
+contents='%(contents:subject)'
+last_commit_author='%(authorname)'
+last_commit_date='%(color:green)%(committerdate:short)%(color:reset)'
+
+git_format=$branch_name$git_info_separator$object_name$git_info_separator$contents$git_info_separator$last_commit_author$git_info_separator$last_commit_date
+git for-each-ref --sort=-committerdate --format="$git_format" 'refs/heads/' | \
+  awk -F "$git_info_separator" -v old_branches_date=$old_branches_date '{ if ($1 !~ /master/ && old_branches_date > $5) {print $1";"$4";"$5 } }' # | \
+# >| ~/branches.txt

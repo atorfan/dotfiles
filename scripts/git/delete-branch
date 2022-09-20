@@ -1,0 +1,22 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+YELLOW='\033[0;33m'
+NC='\033[0m' # No color
+
+##? Deletes the branch passed as an argument
+##?
+##? Usage:
+##?   delete-branch <branch>
+docs::parse "$@"
+
+printf "${YELLOW}%s${NC}\n" "$branch"
+# Delete local branch
+git branch -D "${branch}" 1> /dev/null
+#printf " => Locally deleted."
+# Delete remote branch
+git push origin --delete "$branch" 1> /dev/null
+#printf " => Remotely deleted too.\n"

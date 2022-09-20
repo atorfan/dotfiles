@@ -1,0 +1,31 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+GREEN='\033[92m'
+NC='\033[0m' # No color
+
+##? Checkout all branches from current repository
+##?
+##? Usage:
+##?   checkout-all-branches
+docs::parse "$@"
+
+git fetch --all
+git checkout master
+
+feature_remote_branches=$(git branch -a | grep remotes | grep -v HEAD | grep -v master | grep -v main)
+
+for branch_to_track in $feature_remote_branches; do
+  local_branch=${branch_to_track#remotes/origin/}
+  printf "${NC}Trying to track branch ${GREEN}%s${NC}... " "$branch_to_track"
+  if (! git::branch_exists "$local_branch"); then
+    printf "Skipping."
+  else
+    git branch --track "$local_branch" "$branch_to_track" >/dev/null
+    printf "Done."
+  fi
+  echo -e "${NC}"
+done

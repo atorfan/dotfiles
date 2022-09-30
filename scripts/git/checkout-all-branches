@@ -11,10 +11,15 @@ NC='\033[0m' # No color
 ##?
 ##? Usage:
 ##?   checkout-all-branches
+##?   checkout-all-branches <main_branch>
 docs::parse "$@"
 
+if args::has_no_args "$@"; then
+  main_branch=main
+fi
+
 git fetch --all
-git checkout master
+git checkout $main_branch
 
 feature_remote_branches=$(git branch -a | grep remotes | grep -v HEAD | grep -v master | grep -v main)
 

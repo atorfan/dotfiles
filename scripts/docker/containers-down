@@ -6,15 +6,14 @@ shopt -s expand_aliases
 source "$DOTFILES_PATH/shell/aliases.sh"
 source "$DOTLY_PATH/scripts/core/_main.sh"
 
+GREEN='\033[92m'
+YELLOW='\033[0;33m'
+NC='\033[0m' # No color
+
 ##? Take down all the docker containers up & running
 ##?
 ##? Usage:
 ##?    down
 docs::parse "$@"
 
-containers=$(docker ps | awk 'NR>1 { print $1 }')
-
-for container in $containers; do
-#  echo "Container up & running $container"
-  docker stop $container
-done
+docker ps --format "table {{.ID}}\t{{.Names}}" | awk -v vGREEN="$GREEN" -v vNC="$NC" -v vYELLOW="$YELLOW" 'NR>1 { printf vNC"Stopping container "vGREEN $2 vNC"... "vYELLOW; system("docker stop " $1) }'

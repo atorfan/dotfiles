@@ -7,19 +7,23 @@ send "Using configuration from $profile\n\n"
 spawn -ignore HUP sudo openvpn --config $profile --auth-user-pass --auth-retry interact
 
 expect -r "\[sudo\] .*\: " {
-    set sudopass [exec encpass.sh show ubuntu sudopass]
+    #set sudopass [exec encpass.sh show ubuntu sudopass]
+    set sudopass [exec dot secrets get ubuntu sudopass]
     send "$sudopass\n"
 }
 expect "Enter Auth Username:" {
-    set vpnuser [exec encpass.sh show openvpn username]
+    #set vpnuser [exec encpass.sh show openvpn username]
+    set vpnuser [exec dot secrets get openvpn username]
     send "$vpnuser\n"
 }
 expect "Enter Auth Password:" {
-    set vpnpass [exec encpass.sh show openvpn userpass]
+    #set vpnpass [exec encpass.sh show openvpn userpass]
+    set vpnpass [exec dot secrets get openvpn userpass]
     send "$vpnpass\n"
 }
 expect "CHALLENGE: Enter Google Authenticator Code" {
-    set TOTP_CODE [exec oathtool --totp -d 6 -b [exec encpass.sh show openvpn totp_secret]]
+    #set TOTP_CODE [exec oathtool --totp -d 6 -b [exec encpass.sh show openvpn totp_secret]]
+    set TOTP_CODE [exec oathtool --totp -d 6 -b [exec dot secrets get openvpn totp_secret]]
     send "$TOTP_CODE\n"
 }
 expect "Initialization Sequence Completed" {

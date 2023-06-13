@@ -12,5 +12,5 @@ docs::parse "$@"
 
 echo "Disconnecting from the VPN"
 
-PID=$(ps -eaf | grep "vpn" | grep "sudo" | awk 'BEGIN {OFS="\t"}; {print $2}')
-kill $PID
+#ps -eaf | grep "vpn" | grep "sudo" | awk 'BEGIN {OFS="\t"}; {print $2}' | xargs kill
+sudo pkill openvpn

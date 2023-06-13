@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
-curl https://raw.githubusercontent.com/ahnick/encpass.sh/master/encpass.sh -o ~/.local/bin/encpass.sh
-chmod go-rwx ~/.local/bin/encpass.sh
-chmod u+x ~/.local/bin/encpass.sh
+apt install pass -y
+
+gpg --batch --pinentry-mode=loopback --yes --passphrase "H0l4Luz22" --always-trust --no-use-agent --quick-generate-key 'alejandro.torres@holaluz.com_TEST'
+
+pass init 'alejandro.torres@holaluz.com_TEST'

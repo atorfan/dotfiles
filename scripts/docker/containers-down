@@ -16,4 +16,4 @@ NC='\033[0m' # No color
 ##?    down
 docs::parse "$@"
 
-docker ps --format "table {{.ID}}\t{{.Names}}" | awk -v vGREEN="$GREEN" -v vNC="$NC" -v vYELLOW="$YELLOW" 'NR>1 { printf vNC"Stopping container "vGREEN $2 vNC"... "vYELLOW; system("docker stop " $1) }'
+docker ps --format "table {{.ID}}\t{{.Names}}" | awk -v vGREEN="$GREEN" -v vNC="$NC" -v vYELLOW="$YELLOW" 'NR>1 { printf vNC"Stopping container "vGREEN $2 vNC"... "vYELLOW; system("docker stop -t5 " $1) }'

@@ -19,12 +19,18 @@ fi
 
 main_screen=$(xrandr | grep "connected" | awk -F ' ' '{if ($2 != "disconnected" && $1 != "eDP-1") {print $1}}')
 
-if [[ $position == "left" ]]; then
-  gsettings set org.gnome.shell.extensions.dash-to-dock multi-monitor true
-  xrandr --output "$main_screen" --primary --right-of eDP-1
-elif [[ $position == "bottom" ]]; then
-  gsettings set org.gnome.shell.extensions.dash-to-dock multi-monitor false
-  gsettings set org.gnome.shell.extensions.dash-to-dock preferred-monitor 1
-  xrandr --output "$main_screen" --primary --above eDP-1
+if platform::is_macos; then
+
+elif platform::is_linux; then
+  if [[ $position == "left" ]]; then
+    gsettings set org.gnome.shell.extensions.dash-to-dock multi-monitor true
+    xrandr --output "$main_screen" --primary --right-of eDP-1
+  elif [[ $position == "bottom" ]]; then
+    gsettings set org.gnome.shell.extensions.dash-to-dock multi-monitor false
+    gsettings set org.gnome.shell.extensions.dash-to-dock preferred-monitor 1
+    xrandr --output "$main_screen" --primary --above eDP-1
+  fi
 fi
+
+
 

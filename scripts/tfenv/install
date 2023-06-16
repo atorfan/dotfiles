@@ -10,8 +10,9 @@ source "$DOTLY_PATH/scripts/core/_main.sh"
 ##?    install
 docs::parse "$@"
 
-TFENV_HOME=$HOME/code/tfenv
+TFENV_HOME=$HOME/IdeaProjects/tfenv
 LOCAL_BIN=$HOME/.local/bin
+mkdir -p $LOCAL_BIN
 
 rm -rf $TFENV_HOME
 git clone git@github.com:tfutils/tfenv.git $TFENV_HOME

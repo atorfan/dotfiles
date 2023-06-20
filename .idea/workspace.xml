@@ -1,0 +1,195 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="AutoImportSettings">
+    <option name="autoReloadType" value="SELECTIVE" />
+  </component>
+  <component name="ChangeListManager">
+    <list default="true" id="9eb90667-2c1f-4fe0-9d28-7e24cfd90442" name="Changes" comment="mac dotfiles">
+      <change afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/.dotfiles.iml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/sdot" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/bin/sdot-e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/doc/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/editors/code/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/editors/sublime/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/editors/vim/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/git/.gitattributes" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/git/.gitconfig" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/git/.gitignore_global" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/git/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/langs/.terraform-version" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/langs/java/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/langs/js/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/langs/php/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/langs/python/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/modules/dotly" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/os/linux/.dotly" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/os/mac/.dotly" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/os/mac/brew/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restoration_scripts/01-sample_script.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restoration_scripts/02-encpass.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/restoration_scripts/03-password-store.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/docker/containers-down" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/doctrine-migrations/apply" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/doctrine-migrations/diff" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/git/checkout-all-branches" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/git/delete-branch" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/git/delete-old-branches" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/git/print-old-branches" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/micro-audio/off" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/micro-audio/on" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/process/kill" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/screens-layout/laptop" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/secrets/get" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/secrets/set" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/secrets/set_secret.exp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/surprise/hello" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/terraform/install" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/terraform/use" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/tfenv/install" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/vpn/connect-vpn.exp" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/vpn/off" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/scripts/vpn/on" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shell/.inputrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shell/aliases.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shell/bash/.bash_profile" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shell/bash/.bashrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shell/bash/.bashrc-e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shell/exports.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shell/functions.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shell/init.sh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shell/zsh/.zim/.latest_version" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shell/zsh/.zim/init.zsh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shell/zsh/.zim/login_init.zsh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shell/zsh/.zim/modules/completion" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shell/zsh/.zim/modules/environment" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shell/zsh/.zim/modules/git-info" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shell/zsh/.zim/modules/input" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shell/zsh/.zim/modules/zsh-autosuggestions" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shell/zsh/.zim/modules/zsh-syntax-highlighting" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shell/zsh/.zim/zimfw.zsh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shell/zsh/.zimrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shell/zsh/.zlogin" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shell/zsh/.zshenv" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shell/zsh/.zshenv-e" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shell/zsh/.zshrc" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shell/zsh/completions/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shell/zsh/key-bindings.zsh" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/shell/zsh/themes/.gitkeep" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symlinks/conf.linux.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symlinks/conf.macos-intel.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symlinks/conf.macos.yaml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/symlinks/conf.yaml" afterDir="false" />
+    </list>
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="ComposerSettings">
+    <execution />
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="GitToolBoxStore">
+    <option name="projectConfigVersion" value="5" />
+  </component>
+  <component name="MarkdownSettingsMigration">
+    <option name="stateVersion" value="1" />
+  </component>
+  <component name="PhpWorkspaceProjectConfiguration" interpreter_name="core" />
+  <component name="ProjectId" id="2RIsovzhPdp9ANQjpBUqNiRQy3F" />
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">{
+  &quot;keyToString&quot;: {
+    &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
+    &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
+    &quot;git-widget-placeholder&quot;: &quot;main&quot;,
+    &quot;last_opened_file_path&quot;: &quot;/Users/alejandro.torres@holaluz.com/.dotfiles&quot;,
+    &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
+    &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
+    &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
+    &quot;node.js.selected.package.tslint&quot;: &quot;(autodetect)&quot;,
+    &quot;nodejs_package_manager_path&quot;: &quot;npm&quot;,
+    &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
+  }
+}</component>
+  <component name="RunManager">
+    <configuration default="true" type="JetRunConfigurationType">
+      <module name=".dotfiles" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
+      <module name=".dotfiles" />
+      <option name="filePath" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+  </component>
+  <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="9eb90667-2c1f-4fe0-9d28-7e24cfd90442" name="Changes" comment="" />
+      <created>1686949107379</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1686949107379</updated>
+      <workItem from="1686949108786" duration="426000" />
+      <workItem from="1687293974713" duration="323000" />
+      <workItem from="1687295184402" duration="168000" />
+      <workItem from="1687295371227" duration="17000" />
+      <workItem from="1687295415631" duration="53000" />
+      <workItem from="1687295476524" duration="309000" />
+    </task>
+    <task id="LOCAL-00001" summary="zim updated">
+      <created>1686949389148</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1686949389148</updated>
+    </task>
+    <task id="LOCAL-00002" summary="encpass disabled in restoration scripts">
+      <created>1686949411338</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1686949411338</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="3" />
+  </component>
+  <component name="Vcs.Log.Tabs.Properties">
+    <option name="TAB_STATES">
+      <map>
+        <entry key="MAIN">
+          <value>
+            <State />
+          </value>
+        </entry>
+      </map>
+    </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="zim updated" />
+    <MESSAGE value="encpass disabled in restoration scripts" />
+    <MESSAGE value="mac dotfiles" />
+    <option name="LAST_COMMIT_MESSAGE" value="mac dotfiles" />
+  </component>
+</project>

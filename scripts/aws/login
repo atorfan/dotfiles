@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+shopt -s expand_aliases
+source "$DOTFILES_PATH/shell/aliases.sh"
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? Login into AWS via SSO only if session is expired
+##?
+##? Usage:
+##?    login
+docs::parse "$@"
+
+aws sts get-caller-identity &> /dev/null
+EXIT_CODE="$?"  # $? is the exit code of the last statement
+
+if [ $EXIT_CODE == 0 ]; then
+    # auth is valid
+    echo "Session still valid";
+else
+    # auth needs refresh
+    aws sso login
+fi

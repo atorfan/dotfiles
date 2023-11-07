@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 
-set -euo pipefail
+set -uo pipefail
 
 shopt -s expand_aliases
 source "$DOTFILES_PATH/shell/aliases.sh"
@@ -12,6 +12,7 @@ source "$DOTLY_PATH/scripts/core/_main.sh"
 ##?    login
 docs::parse "$@"
 
+echo "Checking if SSO session has expired";
 aws sts get-caller-identity &> /dev/null
 EXIT_CODE="$?"  # $? is the exit code of the last statement
 
@@ -20,5 +21,6 @@ if [ $EXIT_CODE == 0 ]; then
     echo "Session still valid";
 else
     # auth needs refresh
+    echo "Session expired, logging in...";
     aws sso login
 fi

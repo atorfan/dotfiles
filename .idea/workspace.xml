@@ -4,87 +4,9 @@
     <option name="autoReloadType" value="SELECTIVE" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="9eb90667-2c1f-4fe0-9d28-7e24cfd90442" name="Changes" comment="mac dotfiles">
-      <change afterPath="$PROJECT_DIR$/.gitmodules" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/.dotfiles.iml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/aws.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/modules.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/README.md" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/sdot" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/bin/sdot-e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/doc/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/editors/code/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/editors/sublime/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/editors/vim/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/git/.gitattributes" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/git/.gitconfig" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/git/.gitignore_global" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/git/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/langs/.terraform-version" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/langs/java/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/langs/js/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/langs/php/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/langs/python/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/modules/dotly" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/os/linux/.dotly" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/os/mac/.dotly" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/os/mac/brew/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restoration_scripts/01-sample_script.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restoration_scripts/02-encpass.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/restoration_scripts/03-password-store.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/docker/containers-down" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/doctrine-migrations/apply" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/doctrine-migrations/diff" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/git/checkout-all-branches" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/git/delete-branch" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/git/delete-old-branches" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/git/print-old-branches" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/micro-audio/off" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/micro-audio/on" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/process/kill" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/screens-layout/laptop" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/secrets/get" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/secrets/set" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/secrets/set_secret.exp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/surprise/hello" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/terraform/install" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/terraform/use" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/tfenv/install" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/vpn/connect-vpn.exp" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/vpn/off" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/scripts/vpn/on" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shell/.inputrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shell/aliases.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shell/bash/.bash_profile" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shell/bash/.bashrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shell/bash/.bashrc-e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shell/exports.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shell/functions.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shell/init.sh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shell/zsh/.zim/.latest_version" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shell/zsh/.zim/init.zsh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shell/zsh/.zim/login_init.zsh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shell/zsh/.zim/modules/completion" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shell/zsh/.zim/modules/environment" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shell/zsh/.zim/modules/git-info" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shell/zsh/.zim/modules/input" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shell/zsh/.zim/modules/zsh-autosuggestions" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shell/zsh/.zim/modules/zsh-syntax-highlighting" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shell/zsh/.zim/zimfw.zsh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shell/zsh/.zimrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shell/zsh/.zlogin" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shell/zsh/.zshenv" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shell/zsh/.zshenv-e" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shell/zsh/.zshrc" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shell/zsh/completions/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shell/zsh/key-bindings.zsh" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/shell/zsh/themes/.gitkeep" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/symlinks/conf.linux.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/symlinks/conf.macos-intel.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/symlinks/conf.macos.yaml" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/symlinks/conf.yaml" afterDir="false" />
+    <list default="true" id="9eb90667-2c1f-4fe0-9d28-7e24cfd90442" name="Changes" comment="env: add gradle 7 directory to PATH">
+      <change beforePath="$PROJECT_DIR$/.idea/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/.gitignore" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -96,6 +18,7 @@
   </component>
   <component name="Git.Settings">
     <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+    <option name="UPDATE_TYPE" value="REBASE" />
   </component>
   <component name="GitToolBoxStore">
     <option name="projectConfigVersion" value="5" />
@@ -104,6 +27,10 @@
     <option name="stateVersion" value="1" />
   </component>
   <component name="PhpWorkspaceProjectConfiguration" interpreter_name="core" />
+  <component name="ProjectColorInfo">{
+  &quot;customColor&quot;: &quot;&quot;,
+  &quot;associatedIndex&quot;: 1
+}</component>
   <component name="ProjectId" id="2RIsovzhPdp9ANQjpBUqNiRQy3F" />
   <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectViewState">
@@ -112,11 +39,12 @@
   </component>
   <component name="PropertiesComponent">{
   &quot;keyToString&quot;: {
+    &quot;ASKED_SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.OpenProjectViewOnStart&quot;: &quot;true&quot;,
     &quot;RunOnceActivity.ShowReadmeOnStart&quot;: &quot;true&quot;,
+    &quot;SHARE_PROJECT_CONFIGURATION_FILES&quot;: &quot;true&quot;,
     &quot;WebServerToolWindowFactoryState&quot;: &quot;false&quot;,
     &quot;git-widget-placeholder&quot;: &quot;main&quot;,
-    &quot;last_opened_file_path&quot;: &quot;/Users/alejandro.torres@holaluz.com/.dotfiles&quot;,
     &quot;node.js.detected.package.eslint&quot;: &quot;true&quot;,
     &quot;node.js.detected.package.tslint&quot;: &quot;true&quot;,
     &quot;node.js.selected.package.eslint&quot;: &quot;(autodetect)&quot;,
@@ -125,20 +53,10 @@
     &quot;vue.rearranger.settings.migration&quot;: &quot;true&quot;
   }
 }</component>
-  <component name="RunManager">
-    <configuration default="true" type="JetRunConfigurationType">
-      <module name=".dotfiles" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
-    <configuration default="true" type="KotlinStandaloneScriptRunConfigurationType">
-      <module name=".dotfiles" />
-      <option name="filePath" />
-      <method v="2">
-        <option name="Make" enabled="true" />
-      </method>
-    </configuration>
+  <component name="RecentsManager">
+    <key name="CopyFile.RECENT_KEYS">
+      <recent name="$PROJECT_DIR$/scripts/aws" />
+    </key>
   </component>
   <component name="SpellCheckerSettings" RuntimeDictionaries="0" Folders="0" CustomDictionaries="0" DefaultDictionary="application-level" UseSingleDictionary="true" transferred="true" />
   <component name="TaskManager">
@@ -153,7 +71,14 @@
       <workItem from="1687295184402" duration="168000" />
       <workItem from="1687295371227" duration="17000" />
       <workItem from="1687295415631" duration="53000" />
-      <workItem from="1687295476524" duration="309000" />
+      <workItem from="1687295476524" duration="492000" />
+      <workItem from="1689089910384" duration="628000" />
+      <workItem from="1695813376053" duration="746000" />
+      <workItem from="1697061103890" duration="752000" />
+      <workItem from="1699306197235" duration="1030000" />
+      <workItem from="1699353566412" duration="23000" />
+      <workItem from="1699353605463" duration="327000" />
+      <workItem from="1703837018931" duration="1097000" />
     </task>
     <task id="LOCAL-00001" summary="zim updated">
       <created>1686949389148</created>
@@ -169,7 +94,47 @@
       <option name="project" value="LOCAL" />
       <updated>1686949411338</updated>
     </task>
-    <option name="localTasksCounter" value="3" />
+    <task id="LOCAL-00003" summary="mac dotfiles">
+      <option name="closed" value="true" />
+      <created>1687295853384</created>
+      <option name="number" value="00003" />
+      <option name="presentableId" value="LOCAL-00003" />
+      <option name="project" value="LOCAL" />
+      <updated>1687295853384</updated>
+    </task>
+    <task id="LOCAL-00004" summary="new script to reuse or perform a new login into AWS via SSO">
+      <option name="closed" value="true" />
+      <created>1699307241447</created>
+      <option name="number" value="00004" />
+      <option name="presentableId" value="LOCAL-00004" />
+      <option name="project" value="LOCAL" />
+      <updated>1699307241447</updated>
+    </task>
+    <task id="LOCAL-00005" summary="aws login script: don't exit if retrieving identity fails to allow to use that exit code">
+      <option name="closed" value="true" />
+      <created>1699353930250</created>
+      <option name="number" value="00005" />
+      <option name="presentableId" value="LOCAL-00005" />
+      <option name="project" value="LOCAL" />
+      <updated>1699353930250</updated>
+    </task>
+    <task id="LOCAL-00006" summary="aws db-instances script: allow to describe AWS RDS db instances filtering by Owner tag">
+      <option name="closed" value="true" />
+      <created>1703837794792</created>
+      <option name="number" value="00006" />
+      <option name="presentableId" value="LOCAL-00006" />
+      <option name="project" value="LOCAL" />
+      <updated>1703837794792</updated>
+    </task>
+    <task id="LOCAL-00007" summary="env: add gradle 7 directory to PATH">
+      <option name="closed" value="true" />
+      <created>1703837854124</created>
+      <option name="number" value="00007" />
+      <option name="presentableId" value="LOCAL-00007" />
+      <option name="project" value="LOCAL" />
+      <updated>1703837854124</updated>
+    </task>
+    <option name="localTasksCounter" value="8" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -190,6 +155,10 @@
     <MESSAGE value="zim updated" />
     <MESSAGE value="encpass disabled in restoration scripts" />
     <MESSAGE value="mac dotfiles" />
-    <option name="LAST_COMMIT_MESSAGE" value="mac dotfiles" />
+    <MESSAGE value="new script to reuse or perform a new login into AWS via SSO" />
+    <MESSAGE value="aws login script: don't exit if retrieving identity fails to allow to use that exit code" />
+    <MESSAGE value="aws db-instances script: allow to describe AWS RDS db instances filtering by Owner tag" />
+    <MESSAGE value="env: add gradle 7 directory to PATH" />
+    <option name="LAST_COMMIT_MESSAGE" value="env: add gradle 7 directory to PATH" />
   </component>
 </project>

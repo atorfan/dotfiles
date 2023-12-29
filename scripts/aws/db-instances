@@ -1,0 +1,24 @@
+#!/usr/bin/env bash
+
+set -uo pipefail
+
+shopt -s expand_aliases
+source "$DOTFILES_PATH/shell/aliases.sh"
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+aws::describe-db-instances() {
+	tag_key="${1}"
+	tag_value="${2}"
+	query_string="DBInstances[?contains(TagList[].Key, '$tag_key') && contains(TagList[].Value, '$tag_value')].DBInstanceIdentifier"
+  aws rds describe-db-instances --query "$query_string" --output table
+}
+
+##? Login into AWS via SSO only if session is expired
+##?
+##? Usage:
+##?    db-instances
+docs::parse "$@"
+
+dot aws login
+
+aws::describe-db-instances "Owner" "onefees"

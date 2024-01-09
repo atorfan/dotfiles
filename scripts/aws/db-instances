@@ -16,9 +16,9 @@ aws::describe-db-instances() {
 ##? Login into AWS via SSO only if session is expired
 ##?
 ##? Usage:
-##?    db-instances
+##?    db-instances <owner>
 docs::parse "$@"
 
 dot aws login
 
-aws::describe-db-instances "Owner" "onefees"
+aws::describe-db-instances "Owner" "$owner"

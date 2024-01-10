@@ -9,6 +9,7 @@ export CODELY_THEME_PWD_MODE="short" # full, short, home_relative
 # ------------------------------------------------------------------------------
 # Languages
 # ------------------------------------------------------------------------------
+export LANG=es_ES.UTF-8
 export JAVA_HOME="$HOME/Library/Java/JavaVirtualMachines/temurin-17.0.7/Contents/Home"
 export GEM_HOME="$HOME/.gem"
 export GOPATH="$HOME/.go"

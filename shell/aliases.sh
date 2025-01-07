@@ -30,8 +30,3 @@ alias o.='open .'
 alias up='dot package update_all'
 
 alias code='cd ~ && cd IdeaProjects'
-alias HL='code && cd holaluz'
-alias core='HL && cd core'
-alias solarsales='HL && cd solar-sales'
-alias ensirius='HL && cd ensirius'
-alias solarproduct='HL && cd solarproduct'

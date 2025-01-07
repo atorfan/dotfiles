@@ -37,3 +37,7 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 PATH=~/.console-ninja/.bin:$PATH
+
+# Enable docker & kubectl autocompletion
+source <(docker completion zsh)
+source <(kubectl completion zsh)

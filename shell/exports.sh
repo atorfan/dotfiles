@@ -30,7 +30,7 @@ export FZF_DEFAULT_OPTS="--color=$fzf_colors --reverse"
 # ------------------------------------------------------------------------------
 path=(
 	"$HOME/bin"
-  "$HOME/.local/bin"
+    "$HOME/.local/bin"
 	"$DOTLY_PATH/bin"
 	"$DOTFILES_PATH/bin"
 	"$JAVA_HOME/bin"

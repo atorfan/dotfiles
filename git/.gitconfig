@@ -3,6 +3,9 @@
 	email = alex.torfan@gmail.com
 # 	signingkey = 58271E36CB56EF2B
 
+[includeIf "gitdir:~/code/ifco/"]
+    path = ~/code/ifco/.gitconfig
+
 [fetch]
 	prune = true
 
@@ -91,3 +94,6 @@
 # 	gpgsign = true
 # [gpg]
 # 	program = /usr/local/bin/gpg
+
+[init]
+	defaultBranch = main

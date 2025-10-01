@@ -1,0 +1,33 @@
+#!/usr/bin/env bash
+
+set -euo pipefail
+
+shopt -s expand_aliases
+
+source "$DOTFILES_PATH/shell/aliases.sh"
+source "$DOTLY_PATH/scripts/core/_main.sh"
+
+##? Show deployments and pods in order to check what is running
+##?
+##? Usage:
+##?    running
+##?    running <watch>
+docs::parse "$@"
+
+function k8s_running() {
+  truncate -s 0 /tmp/k8s_running
+  kubectl get pods && kubectl get deployments >> /tmp/k8s_running
+  cat /tmp/k8s_running
+}
+
+function show_running() {
+  local watch=${1:-""}
+
+  if [ "$watch" == "watch" ]; then
+    while k8s_running; do sleep 2; done
+  else
+    eval k8s_running;
+  fi
+}
+
+show_running "$watch"

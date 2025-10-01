@@ -1,4 +1,10 @@
 #!/usr/bin/env zsh
+# Ghostty shell integration for zsh. This should be at the top of your zshrc!
+if [ -n "${GHOSTTY_RESOURCES_DIR}" ]; then
+  echo "Sourcing zsh ghostty integration"
+  builtin source "${GHOSTTY_RESOURCES_DIR}/shell-integration/zsh/ghostty-integration"
+fi
+
 # Uncomment for debuf with `zprof`
 # zmodload zsh/zprof
 
@@ -36,8 +42,22 @@ export NVM_DIR="$HOME/.nvm"
 export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
+export JAVA_8_HOME="$HOME/.sdkman/candidates/java/8.0.452-amzn"
+
 PATH=~/.console-ninja/.bin:$PATH
 
 # Enable docker & kubectl autocompletion
 source <(docker completion zsh)
 source <(kubectl completion zsh)
+
+# Enable Python environments without impacting the system-wide installation
+# python3 -m venv $HOME/py_envs
+# source "$HOME/py_envs/bin/activate"
+
+# pnpm
+export PNPM_HOME="/Users/alecs/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end

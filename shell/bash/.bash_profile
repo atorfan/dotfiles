@@ -5,4 +5,4 @@ export SDKMAN_DIR="$HOME/.sdkman"
 [[ -s "$HOME/.sdkman/bin/sdkman-init.sh" ]] && source "$HOME/.sdkman/bin/sdkman-init.sh"
 
 # Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/alecs/.lmstudio/bin"
+export PATH="$PATH:$HOME/.lmstudio/bin"

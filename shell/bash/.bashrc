@@ -1,4 +1,4 @@
-export DOTFILES_PATH="/Users/alecs/.dotfiles"
+export DOTFILES_PATH="$HOME/.dotfiles"
 export DOTLY_PATH="$DOTFILES_PATH/modules/dotly"
 export DOTLY_THEME="codely"
 
@@ -52,4 +52,4 @@ fi
 PATH=~/.console-ninja/.bin:$PATH
 
 # Added by LM Studio CLI (lms)
-export PATH="$PATH:/Users/alecs/.lmstudio/bin"
+export PATH="$PATH:$HOME/.lmstudio/bin"

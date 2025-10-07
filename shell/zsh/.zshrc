@@ -55,7 +55,7 @@ source <(kubectl completion zsh)
 # source "$HOME/py_envs/bin/activate"
 
 # pnpm
-export PNPM_HOME="/Users/alecs/Library/pnpm"
+export PNPM_HOME="$HOME/Library/pnpm"
 case ":$PATH:" in
   *":$PNPM_HOME:"*) ;;
   *) export PATH="$PNPM_HOME:$PATH" ;;
